@@ -1,0 +1,13 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include sp {
+    max-width: 335px;
+  }
+}
