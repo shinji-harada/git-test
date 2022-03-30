@@ -2,12 +2,16 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+.header,.footer {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 .inner {
-  max-width: 1100px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0 20px;
 
-  @include sp {
-    max-width: 335px;
-  }
+  // @include sp {
+  //   max-width: 335px;
+  // }
 }

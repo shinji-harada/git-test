@@ -1,3 +1,27 @@
 // ===========================
 // header
 // ===========================
+
+.header {
+  height: 120px;
+  width: 100%;
+  max-width: 1440px;
+  padding: 34px 85px;
+  background-color: #333333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__ul {
+ display: flex;
+
+ &-li {
+  margin-right: 51px;
+
+ &:last-of-type {
+   margin-right: 0;
+ }
+}
+}
