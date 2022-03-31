@@ -1,23 +1,25 @@
+// ===========================
+// articleタイトルの色分け
+// ===========================
+
 .article__title-yellow {
-  width: 150px;
+  width: 100%;
   background-color: $base-color;
-  font-size: 18px;
   color: #fff;
-  padding: 15px 20px;
+  text-align: center;
 }
 
 .article__title-green {
-  width: 150px;
+  width: 100%;
   background-color: $main-color;
-  font-size: 18px;
   color: #fff;
-  padding: 15px 20px;
+  text-align: center;
 }
 
 .article__title-blue {
-  width: 150px;
+  width: 100%;
   background-color: $accent-color;
-  font-size: 18px;
   color: #fff;
-  padding: 15px 20px;
+  text-align: center;
 }
+

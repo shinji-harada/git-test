@@ -5,23 +5,56 @@
 .header {
   height: 120px;
   width: 100%;
-  max-width: 1440px;
   padding: 34px 85px;
   background-color: #333333;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include sp {
+    height: 50px;
+    padding: 12px;
+  }
+
+  &__logo img{
+    @include sp {
+      max-width: 55px;
+    }
+  }
 }
 
-.nav__ul {
- display: flex;
+.nav {
+  
+  &__ul {
+    display: flex;
 
- &-li {
-  margin-right: 51px;
+    @include sp {
+      display: none;
+    }
 
- &:last-of-type {
-   margin-right: 0;
+  &-li {
+    margin-right: 51px;
+
+  &:last-of-type {
+    margin-right: 0;
+   }
+  }
  }
 }
+
+// ===========================
+// header
+// ===========================
+
+.sp__menu {
+  display: none;
+
+  @include sp {
+    display: block;
+    height: 10px;
+    width: 30px;
+    background-color: red;
+  }
 }
+

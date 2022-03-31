@@ -1,5 +1,5 @@
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header,.footer {
@@ -11,7 +11,8 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 
-  // @include sp {
-  //   max-width: 335px;
-  // }
+  @include sp {
+    max-width: 300px;
+    padding: 0 10px;
+  }
 }
