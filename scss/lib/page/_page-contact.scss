@@ -1,0 +1,56 @@
+// ===========================
+// Page page__contact
+// ===========================
+
+.page__contact-title {
+  margin-bottom: 59px;
+
+  @include sp {
+    margin-bottom: 40px;
+  }
+}
+
+
+label {
+  display: block;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  border-bottom: solid 1px #707070;
+  padding: 10px;
+  margin-bottom: 46px;
+
+  @include sp {
+    height: 40px;
+    margin-bottom: 21px;
+  }
+}
+
+textarea {
+  min-height: 142px;
+  padding: 5px;
+  line-height: 1.4;
+
+  @include sp {
+    height: 141px;
+  }
+}
+
+.submit__btn {
+  padding: 16px 51px;
+  color: #fff;
+  background-color: #616161;
+  margin-top: 50px;
+
+  @include sp {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 119px;
+  }
+}

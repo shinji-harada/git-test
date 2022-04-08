@@ -1,0 +1,15 @@
+// ===========================
+// common page__main-title
+// ===========================
+
+.page__main-title {
+  position: relative;
+  top: -30px;
+  border-bottom: 2px solid #333333;
+  padding-bottom: 12px;
+
+  @include sp {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+}

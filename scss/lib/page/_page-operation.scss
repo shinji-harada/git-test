@@ -1,0 +1,80 @@
+// ===========================
+// Page page__contact
+// ===========================
+
+.page__operation {
+  @include sp {
+    margin-bottom: 112px;
+  }
+
+  &-title {
+    margin-bottom: 55px;
+
+    @include sp {
+      margin-bottom: 36px;
+    }
+  }
+
+  &-info {
+    margin-bottom: 117px;
+
+    @include sp {
+      margin-bottom: 72px;
+    }
+  }
+
+  &-name {
+    padding-bottom: 9px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #000;
+
+    @include sp {
+      font-size: 14px;
+    }
+
+    & span {
+      display: inline-block;
+      padding-left: 50px;
+
+      @include sp {
+        display: block;
+        padding-top: 15px;
+        padding-left: 0;
+      }
+    }
+  }
+
+  &-date {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #000;
+
+    @include sp {
+      font-size: 14px;
+    }
+
+    & span {
+      display: inline-block;
+      padding-left: 50px;
+
+      @include sp {
+        display: block;
+        padding-top: 15px;
+        padding-left: 0;
+      }
+    }
+
+  }
+
+  &-blog {
+    @include sp {
+      margin-bottom: 110px;
+    }
+  }
+
+  &-blogTitle {
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #333333;
+  }
+
+}

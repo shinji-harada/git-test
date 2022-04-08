@@ -3,6 +3,7 @@
 ---------------------------*/
 
 $sp: 768px;
+
 @mixin sp {
   @media(max-width: ($sp)) {
     @content;

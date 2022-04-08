@@ -11,13 +11,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 
   @include sp {
     height: 50px;
     padding: 12px;
   }
 
-  &__logo img{
+  &__logo img {
     @include sp {
       max-width: 55px;
     }
@@ -25,7 +29,7 @@
 }
 
 .nav {
-  
+
   &__ul {
     display: flex;
 
@@ -33,28 +37,129 @@
       display: none;
     }
 
-  &-li {
-    margin-right: 51px;
+    &-li {
+      margin-right: 51px;
 
-  &:last-of-type {
-    margin-right: 0;
-   }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
   }
- }
 }
 
 // ===========================
-// header
+// sp__btn
 // ===========================
 
-.sp__menu {
+.sp__btn {
   display: none;
+  position: fixed;
+  right: 20px;
+  top: 5px;
+  z-index: 1001;
 
   @include sp {
     display: block;
-    height: 10px;
+    height: 40px;
     width: 30px;
-    background-color: red;
+    // background-color: red;
+  }
+
+  & span {
+    height: 1px;
+    width: 30px;
+    position: relative;
+    background-color: #fff;
+    display: block;
+
+    &:nth-child(1) {
+      top: 15px;
+      transition: all 0.2s ease-out;
+    }
+
+    &:nth-child(2) {
+      top: 20px;
+      transition: all 0.2s ease-out;
+    }
+
+    &:nth-child(3) {
+      top: 25px;
+      transition: all 0.2s ease-out;
+    }
+
+    &.is_active {
+      &:nth-child(1) {
+        top: 20px;
+        transform: rotate(25deg);
+      }
+
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:nth-child(3) {
+        top: 20px;
+        transform: rotate(-25deg);
+      }
+    }
   }
 }
 
+// ===========================
+// sp__menu
+// ===========================
+
+.sp__menu {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 1500;
+  transition: right 0.5s;
+  margin-top: 50px;
+
+  &.is_open {
+    right: 0;
+  }
+
+  &-title {
+    font-size: 14px;
+    padding: 24px 0 26px 30px;
+    background-color: #EBEBEB;
+  }
+
+  &-ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 24px 30px;
+  }
+
+  &-li {
+    font-size: 14px;
+    padding: 12px 12px;
+    position: relative;
+
+    &:after {
+      content: "";
+      height: 10px;
+      width: 10px;
+      border-radius: 100%;
+      background-color: #EBEBEB;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.others {
+
+  &__ul {
+    flex-direction: column;
+  }
+
+}

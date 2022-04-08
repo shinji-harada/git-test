@@ -1,6 +1,12 @@
 // ===========================
 // 変数 color 定義
 // ===========================
-$base-color:  #EDD718;
+$base-color: #EDD718;
 $main-color: #3FB27F;
 $accent-color: #5ED3F3;
+
+:root {
+  --base-color:#EDD718;
+  --main-color:#3FB27F;
+  --accent-color:#5ED3F3;
+}

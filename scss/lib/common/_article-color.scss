@@ -2,22 +2,20 @@
 // articleタイトルの色分け
 // ===========================
 
-.article__title-yellow {
-  width: 100%;
+._yellow {
   background-color: $base-color;
+  // background-color: var(--base-color);
   color: #fff;
   text-align: center;
 }
 
-.article__title-green {
-  width: 100%;
+._green {
   background-color: $main-color;
   color: #fff;
   text-align: center;
 }
 
-.article__title-blue {
-  width: 100%;
+._blue {
   background-color: $accent-color;
   color: #fff;
   text-align: center;

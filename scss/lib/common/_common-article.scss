@@ -1,0 +1,67 @@
+// ===========================
+// common__article
+// ===========================
+
+.common {
+
+  &__articleWrapper {
+    @include sp {
+      display: none;
+    }
+  }
+
+  &__article {
+    display: flex;
+    align-items: center;
+    padding: 57px 0 26px;
+    border-bottom: 1px solid #CCCCCC;
+
+    @include sp {
+      display: block;
+    }
+
+    &-img {
+      max-width: 300px;
+      width: 100%;
+      position: relative;
+
+      & img {
+        max-width: 300px;
+        width: 100%;
+      }
+    }
+
+    &-title {
+      width: 107px;
+      font-size: 14px;
+      padding: 5px 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &-textbox {
+      max-width: 300px;
+      width: 100%;
+      padding-left: 30px;
+    }
+
+    &-date {
+      font-size: 14px;
+      color: #828282;
+      margin-bottom: 2px;
+      margin-bottom: 2px;
+    }
+
+    &-subtitle {
+      font-size: 18px;
+      line-height: 1.17;
+      margin-bottom: 5px;
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: 1.43;
+    }
+  }
+}

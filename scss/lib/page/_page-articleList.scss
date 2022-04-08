@@ -1,0 +1,62 @@
+// ===========================
+// Page page__articleList
+// ===========================
+
+.articleList {
+
+  &__article {
+
+    &-article-item {
+      padding-top: 0;
+      ;
+    }
+  }
+
+  &__btn {
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 35px;
+
+      @include sp {
+        display: none;
+      }
+    }
+
+    &-item {
+      height: 40px;
+      width: 40px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      padding: 10px 15px;
+      margin-right: 15px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    &-black {
+      background-color: #333333;
+      color: #fff;
+    }
+
+    &-white {
+      background-color: #fff;
+      color: #333333;
+    }
+  }
+
+  &__sp-btn {
+    display: none;
+    text-align: center;
+    margin-top: 45px;
+
+    @include sp {
+      display: block;
+    }
+  }
+
+  &__btn-bgNone {
+    box-shadow: none;
+  }
+}

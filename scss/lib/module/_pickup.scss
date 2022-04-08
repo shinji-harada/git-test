@@ -3,8 +3,17 @@
 // ===========================
 
 .pickup {
+  padding-top: 120px;
 
-  &__menu {
+  @include sp {
+    padding-top: 50px;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__ul {
     display: flex;
     justify-content: center;
     margin: 60px 0 52px;
@@ -18,13 +27,13 @@
       padding: 0 21px;
 
       &-border {
-        border-left:1px solid #B5B5B5;
-        border-right:1px solid #B5B5B5;
+        border-left: 1px solid #B5B5B5;
+        border-right: 1px solid #B5B5B5;
+      }
     }
   }
- }
 
-  &__title {
+  &__mainTitle {
     font-size: 24px;
     margin-bottom: 24px;
 
@@ -34,34 +43,31 @@
     }
   }
 
- &__article {
- 
-  &-wrapper {
-   display: flex;
-   justify-content: space-between;
-   padding-bottom: 53px;
-   border-bottom: 1px solid #B5B5B5;
-  }
+  &__articleWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 53px;
+    border-bottom: 1px solid #B5B5B5;
 
-  &-item {
-    position: relative;
 
     @include sp {
-      
+      display: block;
+      padding-bottom: 40px;
     }
+  }
+
+  &__article {
+    position: relative;
 
     & img {
       width: 100%;
     }
 
-  }
-
     &-title {
       max-width: 150px;
       width: 100%;
-      height: 50px;
       font-size: 18px;
-      padding: 15px 20px;  
+      padding: 15px 20px;
       position: absolute;
       top: 0;
       left: 0;
@@ -72,8 +78,13 @@
         font-size: 12px;
         padding: 8px 10px;
       }
+
     }
- }
+
+    &-margin {
+      margin: 0 10px;
+    }
+  }
 }
 
 // ===========================
@@ -88,33 +99,28 @@
 
 .sp__mark {
   display: none;
-  position: relative;
-  
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+  height: 30px;
+  width: 50px;
+
   @include sp {
     display: block;
   }
 
-  &-01 {
+  &-black {
     width: 10px;
     height: 10px;
     border-radius: 100%;
     background-color: #333333;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0px;
   }
 
-  &-02 {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    background-color: #B5B5B5;
-    position: absolute;
-    top: 0;
-    left: 10px;
-  }
-  
-  &-03 {
+  &-gray01 {
     width: 10px;
     height: 10px;
     border-radius: 100%;
@@ -122,6 +128,16 @@
     position: absolute;
     top: 0;
     left: 20px;
-    
+  }
+
+  &-gray02 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #B5B5B5;
+    position: absolute;
+    top: 0;
+    left: 40px;
+
   }
 }
