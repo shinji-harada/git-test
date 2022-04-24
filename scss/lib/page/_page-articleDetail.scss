@@ -8,27 +8,14 @@
     padding: 10px 28px;
   }
 
-  &__mainItem {
+  &__main-item {
     margin: 30px 0 46px;
 
     &-img {
       position: relative;
       width: 100%;
       display: block;
-
-      &::after {
-        content: " ";
-        width: 100%;
-        height: 3px;
-        background-color: #fff;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: rotate(-25deg);
-        transform-origin: 100% 0%;
-        display: inline-block;
-      }
-
+      
       & img {
         width: 100%;
       }
@@ -64,7 +51,7 @@
       margin-bottom: 20px;
     }
 
-    &-title {
+    & h2 {
       font-size: 24px;
       font-weight: bold;
       padding-bottom: 13px;
@@ -76,7 +63,7 @@
       }
     }
 
-    &-text {
+    & p {
       line-height: 1.56;
 
       @include sp {
@@ -89,7 +76,7 @@
   &__h3Heading {
     margin-bottom: 29px;
 
-    &-title {
+    & h3 {
       font-size: 18px;
       font-weight: bold;
       padding-left: 15px;
@@ -97,7 +84,7 @@
       border-left: 5px double #B10303;
     }
 
-    &-text {
+    & p {
       line-height: 1.56;
 
       @include sp {
@@ -114,7 +101,7 @@
       margin-bottom: 112px;
     }
 
-    &-title {
+    & h4 {
       font-size: 16px;
       font-weight: bold;
       padding-left: 20px;
@@ -122,7 +109,7 @@
       border-left: 1px solid #B10303;
     }
 
-    &-text {
+    & p {
       line-height: 1.56;
 
       @include sp {
